@@ -1,4 +1,4 @@
-# Alpine Regulatory Brief
+# Mars Capital Regulatory Brief
 
 A front-end prototype for a Swiss legal and regulatory intelligence service for asset managers.
 

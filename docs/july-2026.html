@@ -4,7 +4,7 @@
 <body><main class="page">
 <header class="edition-head"><p class="eyebrow">IAM Regulatory Brief · Monthly edition</p><h1>July 2026</h1><p class="dek">Ten selected developments for a Swiss independent asset manager. Updated 28 July 2026.</p></header>
 <nav><a href="index.html">Home</a><a href="#action-required">Action required</a><a href="#potentially-relevant">Potentially relevant</a><a href="action-register.html">Action Register</a><a href="#watchlist">Watchlist</a></nav>
-<section class="tag-tools" aria-labelledby="filter-title"><div><p class="eyebrow">Find an update</p><h2 id="filter-title">Filter by topic or publisher</h2></div><label class="search-box"><span>Search</span><input id="update-search" type="search" placeholder="e.g. AML, FINMA, sanctions or AMC" autocomplete="off"></label><div id="tag-filters" class="tag-filters" aria-label="Publication filters"></div><p id="filter-result" class="filter-result" aria-live="polite">Showing all 10 updates</p></section>
+<section class="tag-tools" aria-labelledby="filter-title"><div><p class="eyebrow">Find an update</p><h2 id="filter-title">Filter by topic</h2></div><label class="search-box"><span>Search</span><input id="update-search" type="search" placeholder="e.g. AML, sanctions, UBO register or AMC" autocomplete="off"></label><div id="tag-filters" class="tag-filters" aria-label="Topic filters"></div><p id="filter-result" class="filter-result" aria-live="polite">Showing all 10 updates</p></section>
 <section id="action-required" class="digest digest-group action-required">
   <div class="group-head"><p class="eyebrow">Priority 1</p><h2>Action required</h2><p>These developments require a documented implementation step, control change or exposure review. Open the topic page for the detailed action plan.</p></div>
   <article class="digest-card"><div class="meta"><span class="badge action">Action required</span><br>FINMA · 04 Jun</div><div><h3>AML risk analysis must function as a real management control</h3><p class="deadline"><strong>Deadline: 31 August 2026</strong> · thereafter annually and upon material change</p><p><strong>Required now:</strong> review the AML risk analysis and internal AML documentation; translate risk appetite into measurable limits, escalation triggers and resource allocation, and obtain documented approval.</p><a class="read" href="updates/finma-aml-risk-analysis.html">Open analysis and action plan →</a></div></article>
@@ -26,16 +26,16 @@
 <footer>© 2026 IAM Regulatory Brief · Internal use · <a href="index.html">Back to all editions</a></footer>
 <script>
 const updateTags={
-  "finma-aml-risk-analysis.html":["AML","FINMA","Governance"],
-  "transparency-register-amla.html":["UBO Register","AMLA","Federal Council","Corporate"],
-  "seco-sanctions-evidence.html":["Sanctions","SECO","Screening"],
-  "business-introducers.html":["Introducers","AML","Cross-border","SAM"],
-  "july-russia-sanctions.html":["Sanctions","Russia","EU","UK","US"],
-  "finma-products-portfolio-management.html":["Products","AMC","Portfolio Management","FINMA"],
-  "fatca-model-1.html":["FATCA","Tax","SIF"],
-  "quantum-computing.html":["Technology","Outsourcing","FINMA"],
-  "comco-labour-markets.html":["Employment","Competition","COMCO"],
-  "retrocessions-execution-only.html":["Retrocessions","Conflicts","Federal Supreme Court"]
+  "finma-aml-risk-analysis.html":["AML"],
+  "transparency-register-amla.html":["UBO Register","AMLA","Corporate Reporting"],
+  "seco-sanctions-evidence.html":["Sanctions"],
+  "business-introducers.html":["Introducers","AML","Cross-border"],
+  "july-russia-sanctions.html":["Sanctions","Russia"],
+  "finma-products-portfolio-management.html":["Products","AMC"],
+  "fatca-model-1.html":["FATCA","Tax"],
+  "quantum-computing.html":["Outsourcing","Operational Risk"],
+  "comco-labour-markets.html":["Employment","Competition"],
+  "retrocessions-execution-only.html":["Retrocessions","Conflicts"]
 };
 const cards=[...document.querySelectorAll(".digest-card")];
 cards.forEach(card=>{const key=card.querySelector(".read").getAttribute("href").split("/").pop();const tags=updateTags[key]||[];card.dataset.tags=tags.join("|").toLowerCase();const row=document.createElement("div");row.className="card-tags";row.innerHTML=tags.map(tag=>`<button type="button" class="topic-tag" data-tag="${tag}">${tag}</button>`).join("");card.querySelector("h3").after(row)});
